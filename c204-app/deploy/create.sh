@@ -1,15 +1,24 @@
 #!/bin/bash
 
-location="westgermanycentral"
+location="germanywestcentral"
 rg="pathenk"
 as="appservice-pathenk"
 
-# # Account set subscription
-az account set --subscription "8537ded7-6867-4da0-b182-bb2fe3c7a315"
+# # Account set subscriptio
 
 # # Create resource group
-az create group --name $rg --location $location
+az group create --name $rg --location $location
 
 # # Create service plan
-az appserviceplan create --name $as --resource-name $rg --sku s1 --is-linux 
+az appservice plan create --name $as --resource-group $rg --sku s1 --is-linux 
     # \ --per-site-scaling # enable app scaling on app level
+
+
+webappname="webapp-web"
+# # Create web app
+az webapp list-runtimes # list runtimes
+az webapp create --name $webappname --plan $as --resource-group $rg --runtime "DOTNET|5.0" \
+    --deployment-source-url https://github.com/pati1892/c204-app
+# Use deployment-source-url or
+# az webapp deployment source config --name $webapp_name --resource-group $rg \
+#     --repo-url https://github.com/pati1892/aspnetcore3.1 --branch master --manual-integration
