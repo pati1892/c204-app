@@ -18,7 +18,7 @@ webappname="webapp-web"
 # # Create web app
 az webapp list-runtimes # list runtimes
 az webapp create --name $webappname --plan $as --resource-group $rg --runtime "DOTNET|5.0" \
-    --deployment-source-url https://github.com/pati1892/c204-app
+    # --deployment-source-url https://github.com/pati1892/c204-app
 # Use deployment-source-url or
-# az webapp deployment source config --name $webapp_name --resource-group $rg \
-#     --repo-url https://github.com/pati1892/aspnetcore3.1 --branch master --manual-integration
+az webapp deployment source config --name $webappname --resource-group $rg \
+    --repo-url https://github.com/pati1892/c204-app --branch master --manual-integration
