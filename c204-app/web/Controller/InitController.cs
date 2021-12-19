@@ -31,6 +31,7 @@ namespace web.Controller
         {
             var isInit = _memCache.Get<bool>("INIT");
             Logger.LogInformation("init swap");
+            System.Diagnostics.lo
             if (isInit)
             {
               
