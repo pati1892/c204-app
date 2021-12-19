@@ -1,2 +1,2 @@
 [config]
-project = c204-app/blazorweb/blazorweb.Server.csproj
+project = c204-app/blazorweb/Server/blazorweb.Server.csproj
