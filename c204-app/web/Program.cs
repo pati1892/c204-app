@@ -23,6 +23,7 @@ namespace web
                     webBuilder.UseStartup<Startup>();
                 }).ConfigureLogging(x =>
                 {
+                    x.ClearProviders();
                     x.AddConsole();
                 });
     }
