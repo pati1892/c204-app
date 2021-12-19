@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "U2S2humn1ayP5wwUKHLCyjv9hDqA7m7t2OWQWsQT0hiwog04p0uS6AyvtOfH5AYzOoUYICBiSl83lcXtnWVrJw==",
+  "dgSpecHash": "FT6AdS+bhqg8e0teNGy+cwtj0rP/14XaTp9OlAf8PIcIS4hDE3PbhBOD8h7CcSVOBMAa3oCTr4Lg1n4No1zPxA==",
   "success": true,
   "projectFilePath": "C:\\Users\\PatrickHenkelmann\\source\\git\\Exam\\c204-app\\c204-app\\web\\web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\azure.core\\1.19.0\\azure.core.1.19.0.nupkg.sha512",
+    "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\azure.storage.blobs\\12.10.0\\azure.storage.blobs.12.10.0.nupkg.sha512",
+    "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\azure.storage.common\\12.9.0\\azure.storage.common.12.9.0.nupkg.sha512",
+    "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
@@ -25,9 +29,12 @@
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
+    "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
     "C:\\Users\\PatrickHenkelmann\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []

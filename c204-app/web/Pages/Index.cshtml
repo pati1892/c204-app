@@ -7,10 +7,16 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>Auto swap enabled</p>
-    <p>Auto swap enabled2</p>
-    <p>Auto swap enabled3</p>
-    <p>Auto swap enabled4</p>
-    <p>Auto swap enabled5</p>
-    <p>Auto swap enabled6</p>
+    <ul>
+        @foreach (var blobItemName in Model.BlobNames)
+        {
+            <li>@blobItemName</li>
+        }
+    </ul>
+    <form asp-page-handler="UploadRandomBlob" method="post">
+        <button type="submit">Add new random blob</button>
+    </form>
+
 </div>
+
+
