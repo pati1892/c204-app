@@ -21,6 +21,9 @@ namespace web
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                }).ConfigureLogging(x =>
+                {
+                    x.AddConsole();
                 });
     }
 }

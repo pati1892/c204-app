@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,18 +17,23 @@ namespace web.Controller
 
   
         private readonly IMemoryCache _memCache;
-        public InitController(IMemoryCache memCache)
+        public InitController(IMemoryCache memCache, ILogger<InitController> logger)
         {
             _memCache = memCache;
+            Logger = logger;
         }
+
+        public ILogger Logger { get; }
 
         // GET: api/<InitController>
         [HttpGet]
         public IActionResult Get()
         {
             var isInit = _memCache.Get<bool>("INIT");
+            Logger.LogInformation("init swap");
             if (isInit)
             {
+              
                 return Ok("Already init");
             }
             _memCache.Set("INIT", true);
