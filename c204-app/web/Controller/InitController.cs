@@ -30,7 +30,7 @@ namespace web.Controller
         public IActionResult Get()
         {
             var isInit = _memCache.Get<bool>("INIT");
-            Logger.LogInformation("init swap");
+            Logger.LogWarning("init swap");
         
             if (isInit)
             {
