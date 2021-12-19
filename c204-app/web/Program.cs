@@ -25,6 +25,7 @@ namespace web
                 {
                     x.ClearProviders();
                     x.AddConsole();
+                    x.AddAzureWebAppDiagnostics();
                 });
     }
 }
