@@ -18,6 +18,7 @@ else
             <li>@blobName</li>
         }
     </ul>
+    <button @onclick="@AddRandomBlob"></button>
 }
 
 @code {
@@ -25,6 +26,12 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        blobNames = await Http.GetFromJsonAsync<List<string>>("api/Blob");
+    }
+
+    protected async Task AddRandomBlob()
+    {
+        await Http.PostAsync("api/Blob", null);
         blobNames = await Http.GetFromJsonAsync<List<string>>("api/Blob");
     }
 

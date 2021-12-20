@@ -20,7 +20,7 @@
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
-        "AZURE_STORAGE_CONNECTION_STRING": "BlobEndpoint=https://sapathenk.blob.core.windows.net/;QueueEndpoint=https://sapathenk.queue.core.windows.net/;FileEndpoint=https://sapathenk.file.core.windows.net/;TableEndpoint=https://sapathenk.table.core.windows.net/;SharedAccessSignature=sv=2020-08-04&ss=bfqt&srt=c&sp=rwdlacupitfx&se=2021-12-25T04:04:22Z&st=2021-12-19T20:04:22Z&spr=https&sig=%2FB8J4nA6ZnYHlAnqXxRPV6V%2BRDffR1fDpJRq71j6n5o%3D",
+        "AZURE_STORAGE_CONNECTION_STRING": "BlobEndpoint=https://sapathenk.blob.core.windows.net/;QueueEndpoint=https://sapathenk.queue.core.windows.net/;FileEndpoint=https://sapathenk.file.core.windows.net/;TableEndpoint=https://sapathenk.table.core.windows.net/;SharedAccessSignature=sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2021-12-20T05:14:21Z&st=2021-12-19T21:14:21Z&spr=https&sig=VjBJmTyLYSTlppmgO5pVpzkPO1u%2FHwZTk%2F3o8atQePM%3D",
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": "true",

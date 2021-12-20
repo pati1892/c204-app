@@ -15,5 +15,11 @@
     <ProjectReference Include="..\Shared\blazorweb.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="template.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 
 </Project>
