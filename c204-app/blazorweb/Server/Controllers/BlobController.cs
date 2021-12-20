@@ -42,7 +42,7 @@ namespace blazorweb.Server.Controllers
         {
             var file = await System.IO.File.ReadAllTextAsync("template.txt");
             BlobContainerClient blobContainerClient = BlobServiceClient.GetBlobContainerClient("web-container");
-            var currentDate = DateTime.Now.ToString();
+            var currentDate = DateTime.Now.Ticks.ToString();
             BlobClient blobClient = blobContainerClient.GetBlobClient($"template-{currentDate}.txt");
             file = file.Replace("{{Date}}", currentDate);       
             await blobClient.UploadAsync(new MemoryStream(Encoding.UTF8.GetBytes(file)), new BlobHttpHeaders
